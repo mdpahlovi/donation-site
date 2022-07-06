@@ -6,6 +6,7 @@
 section{
     padding: 0 96px;
     margin-bottom: 96px;
+    text-align: center;
 }
 .sec-title{
     font-size: 48px;
@@ -23,12 +24,13 @@ section{
   background-color: #FF5959;
   color: white;
   padding: 15px 32px;
-  margin-top: 15px;
   border-radius: 15px;
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
 }
+
+/* Nav Nar */
 .nav-bar{
     padding: 1% 0;
     display: flex;
@@ -49,6 +51,8 @@ section{
     font-weight: bold;
     color: white;
 }
+
+/* Banner Sec */
 .banner-sec{ 
     width: auto;
     height: 100vh;
@@ -61,11 +65,9 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align: center;
 }
-.donate-now{
-    text-align: center;
-}
+
+/* Donate Now */
 .donate-amount{
     display: flex;
     justify-content: center;
@@ -84,14 +86,51 @@ section{
     text-align: center;
     transform: translateX(440px);
 }
-.donate-plan{
-    text-align: center;
-}
+
+/* Donate Plan */
 .plans{
     display: flex;
     justify-content: space-between;
 }
 .plan-items{
-    margin: 0 30px;
-    padding: 20px 10px;
+    padding: 32px 16px;
+}
+.gap-small{
+    margin-bottom: 16px;
+}
+
+/* Email Subscription */
+.input-email {
+    display: flex;
+    justify-content: center;
+}
+.input-btn{
+    background-color: white;
+    color: black;
+    padding: 15px 150px 15px 32px;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sub-btn{
+    background-color: #FF5959;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    padding:45px 0 20px;
+    text-align: center;
+    color: white;
+    background-color:#26272b;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
 }
