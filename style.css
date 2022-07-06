@@ -78,12 +78,10 @@ section{
     cursor: pointer;
 }
 .input-amount{
-    display: block;
     border: none;
     padding: 5px 150px;
     border-bottom:1px dashed black ;
     text-align: center;
-    transform: translateX(440px);
 }
 
 /* Donate Plan */
@@ -128,6 +126,7 @@ section{
 .team-member img{
     clip-path: circle();
     width: 50%;
+    margin-right: 16px;
 }
 .team-member div{
     text-align: left;
