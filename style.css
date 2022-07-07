@@ -3,6 +3,8 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
+
+/* Initial Setup */
 section{
     padding: 0 96px;
     margin-bottom: 96px;
@@ -11,17 +13,17 @@ section{
 .sec-title{
     font-size: 48px;
 }
-.big-text{
-    font-size: 56px;
-}
 .gap-between{
     margin-bottom: 32px;
 }
+.gap-small{
+    margin-bottom: 16px;
+}
 .btn{
-  background-color: #FF5959;
-  padding: 15px 32px;
-  border-radius: 15px;
-  border: none;
+    background-color: #FF5959;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: none;
 }
 .btn a{
     text-decoration: none;
@@ -58,6 +60,9 @@ section{
     background-image: url("Images/banner-img.jpg");
     background-size: cover;
 }
+.big-text{
+    font-size: 56px;
+}
 .banner{
     color: white;
     position: absolute;
@@ -79,7 +84,7 @@ section{
 }
 .input-amount{
     border: none;
-    padding: 5px 150px;
+    padding: 8px 160px;
     border-bottom:1px dashed black ;
     text-align: center;
 }
@@ -94,9 +99,6 @@ section{
     border-radius: 16px;
     padding: 32px 16px;
 }
-.gap-small{
-    margin-bottom: 16px;
-}
 
 /* Blogs */
 .blog-items{
@@ -104,11 +106,19 @@ section{
     justify-content: space-evenly;
     align-items: center;
 }
-.blog-items div{
+.blogs-sec .first{
     text-align: left;
 }
-.blog-items img{
-    width: 40%;
+.blogs-sec .first img{
+    width: 36%;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+.blogs-sec .second{
+    text-align: right;
+}
+.blogs-sec .second img{
+    width: 35%;
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
 }
 
 /* Our Team */
@@ -121,7 +131,7 @@ section{
     align-items: center;
     border: 1px solid black;
     border-radius: 16px;
-    padding: 32px 16px;
+    padding: 16px;
 }
 .team-member img{
     clip-path: circle();
@@ -140,28 +150,70 @@ section{
 .input-btn{
     background-color: white;
     color: black;
-    padding: 15px 150px 15px 32px;
-    border-radius: 15px 0 0 15px;
+    padding: 16px 160px 16px 32px;
+    border-radius: 8px 0 0 8px;
     border: 1px solid black;
     font-weight: bold;
-    cursor: pointer;
 }
 .sub-btn{
     background-color: #FF5959;
     color: white;
-    padding: 15px 32px;
-    border-radius: 0 15px 15px 0;
+    padding: 16px 32px;
+    border-radius: 0 8px 8px 0;
     border: none;
     font-weight: bold;
     cursor: pointer;
 }
 
+/* Contact Form */
+.contact-form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #111;
+    margin: 0;
+    padding: 64px 0;
+    color: white;
+}
+.contact-form div ul{
+    display: flex;
+    justify-content: center;
+}
+.contact-form div ul li{
+    list-style: none;
+    margin: 16px;
+}
+.contact-form .line{
+    width: 1px;
+    height: 280px;
+    background-color: white;
+}
+.contact-input {
+    font-weight: bold;
+    border-radius: 8px;
+    line-height: 24px;
+    background-color: transparent;
+    border:1px solid white;
+    padding: 16px 128px 16px 32px;
+    margin-bottom: 16px;
+}
+textarea {
+    width: 144px;
+    height: 96px;
+    resize:vertical;
+}
+.contact-form form .btn{
+    padding: 16px 128px;
+    font-weight: bold;
+    color: white;
+}
+
 /* Footer */
 footer{
-    padding:45px 0 20px;
+    padding: 24px 0 24px 0;
     text-align: center;
     color: white;
-    background-color:#26272b;
+    background-color:black;
 }
 footer p a{
     text-decoration: none;
