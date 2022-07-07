@@ -54,10 +54,10 @@ section{
 }
 
 /* Banner Sec */
-.banner-sec{ 
+.banner-sec{
     width: auto;
     height: 100vh;
-    background-image: url("Images/banner-img.jpg");
+    background-image: url("../Images/banner.jpg");
     background-size: cover;
 }
 .big-text{
