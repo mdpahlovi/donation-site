@@ -1,0 +1,155 @@
+/* Large devices (desktops, less than 1200px) */
+@media only screen and (max-width: 1199.98px) {
+    .card-container {
+        gap: 19.2px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media only screen and (max-width: 991.98px) {
+    :root {
+        --sec-gap-y: 48px;
+    }
+    .blog-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-items img {
+        width: 100%;
+    }
+    .first-blog div h3 br,
+    .contact-form div p br {
+        display: none;
+    }
+    .teams .card {
+        flex-direction: column;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and (max-width: 767.98px) {
+    :root {
+        --sec-gap-y: 32px;
+    }
+    .card-container {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    }
+    .card:first-child {
+        grid-column: 1 / 3;
+    }
+    .card:nth-child(2n) {
+        grid-column: 3 / 5;
+    }
+    .card:last-child {
+        grid-column: 2 / 4;
+        grid-row-start: 2;
+    }
+    .sec-title {
+        font-size: 40px;
+    }
+    .gap-between {
+        margin-bottom: 24px;
+    }
+
+    /* Navigation Bar */
+    .menu-icon {
+        display: block;
+        text-align: right;
+    }
+    .menu {
+        display: none;
+        grid-column: 1 / -1;
+        grid-row-start: 2;
+    }
+    .menu ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 0 0 16px 16px;
+    }
+
+    /* Banner Sec */
+    .big-text {
+        font-size: 48px;
+    }
+
+    /* Donate Amount */
+    .donate-amount {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        justify-content: center;
+    }
+    .teams .card {
+        flex-direction: row;
+    }
+    /* Contact Section */
+    .contact-form .site-info {
+        width: 50%;
+    }
+    .contact-input {
+        padding: 16px 10vw 16px 32px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    :root {
+        --sec-gap-y: 19.2px;
+    }
+    p br,
+    h3 br,
+    h1 br {
+        display: none;
+    }
+    .card-container {
+        display: grid;
+        grid-template: repeat(3, 1fr) / 1fr;
+    }
+    .card:first-child {
+        grid-column: 1 / -1;
+    }
+    .card:nth-child(2n) {
+        grid-column: 1 / -1;
+        grid-row-start: 2;
+    }
+    .card:last-child {
+        grid-column: 1 / -1;
+        grid-row-start: 3;
+    }
+    .donate-amount {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        gap: 19.2px;
+        justify-content: center;
+    }
+    #blogs-sec .blog-items {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #blogs-sec .blog-items img {
+        display: none;
+    }
+    .input-amount {
+        padding: 8px 14vw;
+    }
+    #email-subscription {
+        display: none;
+    }
+    .contact-form {
+        flex-direction: column-reverse;
+        justify-content: left;
+    }
+    .contact-form .line {
+        display: none;
+    }
+    .contact-form .site-info,
+    .contact-form form {
+        width: 100%;
+    }
+    .contact-form .contact-input {
+        width: 100%;
+    }
+}

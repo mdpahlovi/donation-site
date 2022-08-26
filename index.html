@@ -1,172 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Givant | Give To Help</title>
-    <link rel="shortcut icon" href="icon/g-logo.png" type="image/x-icon"> 
-    <link rel="stylesheet" href="CSS/style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Givant | Give To Help</title>
+        <link rel="shortcut icon" href="icon/g-logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="stylesheet" href="CSS/responsive.css" />
 
-    <!-- Google Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-</head>
-<body>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <!-- Banner Sec -->
-    <section class="banner-sec">
-        <!-- Nav Bar -->
-        <nav class="nav-bar">
-            <h3 class="logo">Givant</h3>
-            <ul class="nav-items">
-                <li><a href="">About</a></li>
-                <li><a href="#donate-plan">Plan</a></li>
-                <li><a href="#blogs-sec">Blog</a></li>
-                <li><a href="#our-teams">Team</a></li>
-                <li><button class="btn"><a href="#donate-now">Donte Now</a></button></li>
-            </ul>
-        </nav>
-        <div class="banner">
-            <h1 class="big-text gap-between">Let’s Help Those Who Are<br> More In Need</h1>
-            <p class="gap-between">A donation is a gift for charity, humanitarian aid, or to benefit a cause. A donation may take<br> various forms, including money, alms, services, or goods such as clothing, toys, food, or vehicles.<br> A donation may satisfy medical needs such as blood or organs for transplant.</p>
-            <button class="btn"><a href="">Learn More</a></button>
-        </div>
-    </section>
-
-    <!-- Donate Now -->
-    <section id="donate-now">
-        <h3 class="sec-title gap-between">Donate Today</h3>
-        <p class="gap-between">You can make sure that your donation is in right place.<br> Who are more in need</p>
-        <div class="donate-amount gap-between">
-            <h1>100th</h1>
-            <h1>200th</h1>
-            <h1>500th</h1>
-            <h1>1000th</h1>
-            <h1>5000th</h1>
-        </div>
-        <form>
-            <input class="input-amount gap-small" type="text" placeholder="Other Amount (Taka)"><br>
-            <input class="btn" value="Donate Now" type="submit" style="color: white;">
-        </form>    
-    </section>
-
-    <!-- Donate Plan -->
-    <section id="donate-plan">
-        <h3 class="sec-title gap-between">Our Donate Plan</h3>
-        <p class="gap-between">Our main plan is help to every one. But some time we con't do it for some limitation. <br>
-        We help people given those stages below. If you have any idea please contact us</p>
-        <div class="plans">
-            <div class="plan-items">
-                <img class="gap-small" src="icon/food.png" alt="Foot for family">
-                <h1 class="gap-small">Food for a family</h1>
-                <p>Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo populo animal noluisse, enim</p>
+        <!-- Google Font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header class="header-sec">
+            <!-- Nav Bar -->
+            <nav class="main-nav">
+                <div class="logo">
+                    <h3 class="sec-title">Givant</h3>
+                </div>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Donate Now</a></li>
+                        <li><a href="#">Donate Plan</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li>
+                            <button class="btn"><a href="#">Contact</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="banner">
+                <h1 class="big-text gap-between">
+                    Let’s Help Those Who Are<br />
+                    More In Need
+                </h1>
+                <p class="gap-between">
+                    A donation is a gift for charity, humanitarian aid, or to benefit a cause. A donation may take<br />
+                    various forms, including money, alms, services, or goods such as clothing, toys, food, or
+                    vehicles.<br />
+                    A donation may satisfy medical needs such as blood or organs for transplant.
+                </p>
+                <button class="btn"><a href="">Learn More</a></button>
             </div>
-            <div class="plan-items" style="margin: 0 64px;">
-                <img class="gap-small" src="icon/shalter.png" alt="Shelter for a family">
-                <h1 class="gap-small">Shelter for a family</h1>
-                <p>Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo populo animal noluisse, enim</p>
-            </div>
-            <div class="plan-items">
-                <img class="gap-small" src="icon/education.png" alt="Education for a child">
-                <h1 class="gap-small">Education for a child</h1>
-                <p>Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo populo animal noluisse, enim</p>
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Blogs -->
-    <section id="blogs-sec" class="blogs-sec">
-        <h3 class="sec-title gap-between">Blogs</h3>
-        <p class="gap-between">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati fugit reprehenderit.<br> Velit sunt qui sequi officiis, quas rem quibusdam nisi facilis itaque.</p>
-        <div class="blog-items first">
-            <div>
-                <h3 class="sec-title gap-small">Their lives depend on<br> your donation</h3>
-                <p class="gap-small">Lorem ipsum dolor sit amet, usu cu esse possit<br> referrentur, at eam falli deterruisset. No duo populo<br> animal noluisse, enim</p>
-                <p class="gap-small">Lorem ipsum dolor sit amet, usu cu esse possit<br> referrentur, at eam falli deterruisset.</p>
-                <button class="btn"><a href="">Read More</a></button>
+        <!-- Donate Now -->
+        <section class="container" id="donate-now">
+            <h3 class="sec-title gap-between">Donate Today</h3>
+            <p class="gap-between">
+                You can make sure that your donation is in right place.<br />
+                Who are more in need
+            </p>
+            <div class="donate-amount gap-between">
+                <h1>100th</h1>
+                <h1>200th</h1>
+                <h1>500th</h1>
+                <h1>1000th</h1>
+                <h1>5000th</h1>
             </div>
-            <img src="Images/donation7.jpg" alt="Donation"> 
-        </div>
-        <div style="margin: 64px;""></div>
-        <div class="blog-items second">
-            <img src="Images/donation0.jpg" alt="Donation">
-            <div>
-                <h3 class="sec-title gap-small">They need us<br> to suvive</h3>
-                <p class="gap-small">Lorem ipsum dolor sit amet, usu cu esse possit<br> referrentur, at eam falli deterruisset. No duo populo<br> animal noluisse, enim</p>
-                <p class="gap-small">Lorem ipsum dolor sit amet, usu cu esse possit<br> referrentur, at eam falli deterruisset.</p>
-                <button class="btn"><a href="">Read More</a></button>
-            </div> 
-        </div>
-    </section>
+            <form>
+                <input class="input-amount gap-small" type="text" placeholder="Other Amount (Taka)" /><br />
+                <input class="btn" value="Donate Now" type="submit" style="color: white" />
+            </form>
+        </section>
 
-    <!-- Our Team -->
-    <section id="our-teams">
-        <h3 class="sec-title gap-between">Meet Our Team</h3>
-        <p class="gap-between">We work together, help each other to porvide a good scrvices. <br> also reach everyone who need Help</p>
-        <div class="teams">
-            <div class="team-member">
-                <img src="Images/Pahlovi.png" alt="MD Pahlovi">
-                <h2 class="line"></h2>
-                <div>
-                    <h1 class="gap-small">MD Pahlovi</h1>
-                    <h3 class="gap-small">Manager</h3>
-                    <P>He Manager everythink. Whatever we neet. He Provide us</P>
+        <!-- Donate Plan -->
+        <section class="container" id="donate-plan">
+            <h3 class="sec-title gap-between">Our Donate Plan</h3>
+            <p class="gap-between">
+                Our main plan is help to every one. But some time we con't do it for some limitation. <br />
+                We help people given those stages below. If you have any idea please contact us
+            </p>
+            <div class="card-container plans">
+                <div class="card">
+                    <img class="gap-small" src="icon/food.png" alt="Foot for family" />
+                    <h1 class="gap-small">Food for a family</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo
+                        populo animal noluisse, enim
+                    </p>
+                </div>
+                <div class="card">
+                    <img class="gap-small" src="icon/shalter.png" alt="Shelter for a family" />
+                    <h1 class="gap-small">Shelter for a family</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo
+                        populo animal noluisse, enim
+                    </p>
+                </div>
+                <div class="card">
+                    <img class="gap-small" src="icon/education.png" alt="Education for a child" />
+                    <h1 class="gap-small">Education for a child</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo
+                        populo animal noluisse, enim
+                    </p>
                 </div>
             </div>
-            <div class="team-member" style="margin: 0 64px;">
-                <img src="Images/Profile-1.png" alt="MD Pahlovi">
+        </section>
+
+        <!-- Blogs -->
+        <section id="blogs-sec" class="container">
+            <h3 class="sec-title gap-between">Blogs</h3>
+            <p class="gap-between">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati fugit reprehenderit.<br />
+                Velit sunt qui sequi officiis, quas rem quibusdam nisi facilis itaque.
+            </p>
+            <div class="blog-items first-blog">
                 <div>
-                    <h1 class="gap-small">Chris Evans</h1>
-                    <h3 class="gap-small">Accountant</h3>
-                    <P>He Manager Account. How Much found we rage</P>
+                    <h3 class="sec-title gap-small">
+                        Their lives depend on<br />
+                        your donation
+                    </h3>
+                    <p class="gap-small">
+                        Lorem ipsum dolor sit amet, usu cu esse possit<br />
+                        referrentur, at eam falli deterruisset. No duo populo<br />
+                        animal noluisse, enim
+                    </p>
+                    <p class="gap-small">
+                        Lorem ipsum dolor sit amet, usu cu esse possit<br />
+                        referrentur, at eam falli deterruisset.
+                    </p>
+                    <button class="btn"><a href="">Read More</a></button>
+                </div>
+                <img src="Images/donation7.jpg" alt="Donation" />
+            </div>
+            <div class="blogs-gap"></div>
+            <div class="blog-items second-blog">
+                <img src="Images/donation0.jpg" alt="Donation" />
+                <div>
+                    <h3 class="sec-title gap-small">
+                        They need us<br />
+                        to suvive
+                    </h3>
+                    <p class="gap-small">
+                        Lorem ipsum dolor sit amet, usu cu esse possit<br />
+                        referrentur, at eam falli deterruisset. No duo populo<br />
+                        animal noluisse, enim
+                    </p>
+                    <p class="gap-small">
+                        Lorem ipsum dolor sit amet, usu cu esse possit<br />
+                        referrentur, at eam falli deterruisset.
+                    </p>
+                    <button class="btn"><a href="">Read More</a></button>
                 </div>
             </div>
-            <div class="team-member">
-                <img src="Images/Profile-3.png" alt="MD Pahlovi">
-                <div>
-                    <h1 class="gap-small">Johnny Depp</h1>
-                    <h3 class="gap-small">Field work</h3>
-                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+        </section>
+
+        <!-- Our Team -->
+        <section id="our-teams" class="container">
+            <h3 class="sec-title gap-between">Meet Our Team</h3>
+            <p class="gap-between">
+                We work together, help each other to porvide a good scrvices. <br />
+                also reach everyone who need Help
+            </p>
+            <div class="card-container teams">
+                <div class="card">
+                    <img src="Images/Pahlovi.png" alt="MD Pahlovi" />
+                    <div>
+                        <h1 class="gap-xs">MD Pahlovi</h1>
+                        <h3 class="gap-xs">Manager</h3>
+                        <p>He Manager everythink. Whatever we neet. He Provide us</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Profile-1.png" alt="MD Pahlovi" />
+                    <div>
+                        <h1 class="gap-xs">Chris Evans</h1>
+                        <h3 class="gap-xs">Accountant</h3>
+                        <p>He Manager Account. How Much found we rage</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Profile-3.png" alt="MD Pahlovi" />
+                    <div>
+                        <h1 class="gap-xs">Johnny Depp</h1>
+                        <h3 class="gap-xs">Field work</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Email Subscription -->
-    <section>
-        <h3 class="sec-title gap-between">Get Our Updates</h3>
-        <p class="gap-between">Enter You Gmail address. By this can get Updated. You can also contact with us<br> Through email thank you. Stay safe be helpful bes honest</p>
-        <form class="input-email">
-            <input class="input-btn" type="email" placeholder="@gmail.com">
-            <input class="sub-btn" value="Subscribe" type="submit">
-        </form>
-    </section>
+        <!-- Email Subscription -->
+        <section class="container" id="email-subscription">
+            <h3 class="sec-title gap-between">Get Our Updates</h3>
+            <p class="gap-between">
+                Enter You Gmail address. By this can get Updated. You can also contact with us<br />
+                Through email thank you. Stay safe be helpful bes honest
+            </p>
+            <form class="input-email">
+                <input class="input-btn" type="email" placeholder="@gmail.com" />
+                <input class="sub-btn" value="Subscribe" type="submit" />
+            </form>
+        </section>
 
-    <!-- Contact Form -->
-    <section class="contact-form">
-        <div>
-            <h3 class="sec-title gap-small">Givant</h3>
-            <p class="gap-small">We can ensure that you money is in right place. You can also contact with us.<br>We prode to beverymonth we help at least one family to reach out form scarcity.<br> This gap will reduch day by day. We work hard to grough our socity.<br> Pray For us , Thank You stay hare</p>
-            <ul>
-                <li><button class="btn"><a href="https://www.facebook.com/mdpahlovi07">Facebook</a></button></li>
-                <li><button class="btn"><a href="https://www.linkedin.com/in/mdpahlovi/">Linkedin</a></button></li>
-                <li><button class="btn"><a href="https://github.com/mdpahlovi">Github</a></button></li>
-            </ul>
-        </div>
-        <div class="line"></div>
-        <form>      
-            <input class="contact-input" type="text" placeholder="Fast Name"><br>
-            <input class="contact-input" type="text" placeholder="Email"><br>
-            <textarea class="contact-input" placeholder="Your Massages"></textarea><br>
-            <input class="btn" type="submit" value="SUBMIT">
-        </form>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by <a href="index.html">Givant</a></p>
-    </footer>
-</body>
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <div class="site-info">
+                <h3 class="sec-title gap-small">Givant</h3>
+                <p class="gap-small">
+                    We can ensure that you money is in right place. You can also contact with us.<br />We prode to
+                    beverymonth we help at least one family to reach out form scarcity.<br />
+                    This gap will reduch day by day. We work hard to grough our socity.<br />
+                    Pray For us , Thank You stay hare
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/mdpahlovi07"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mdpahlovi/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mdpahlovi"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mdpahlovi"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <form>
+                <input class="contact-input" type="text" placeholder="Fast Name" /><br />
+                <input class="contact-input" type="email" placeholder="Email" /><br />
+                <input class="contact-input massage-box" type="text" placeholder="Your Massages" /><br />
+                <input class="btn" type="submit" value="SUBMIT" />
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by <a href="index.html">Givant</a></p>
+        </footer>
+
+        <!-- JavaScript -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
+        ></script>
+        <script src="JavaScript/script.js"></script>
+    </body>
 </html>
